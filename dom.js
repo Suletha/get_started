@@ -34,8 +34,8 @@ input.value = 'suletha'
 
 //querySelectorAll
 
-var titles = document.querySelectorAll('.title');
-titles[0].textContent = 'Welcome'
+// var titles = document.querySelectorAll('.title');
+// titles[0].textContent = 'Welcome'
 
 // var sec_item = document.querySelectorAll('.list-group-item:nth-child(2)');
 // sec_item.forEach(function(sec_item) {
@@ -48,9 +48,25 @@ titles[0].textContent = 'Welcome'
 //     sec_item.style.color = 'green';
 //   };
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
-var even = document.querySelectorAll('li:nth-child(even)');
-for(var i = 0 ; i < odd.length;i++){
-    odd[i].style.backgroundColor = 'green'
-    //even[i].style.backgroundColor = '#ccc'
-}
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// var even = document.querySelectorAll('li:nth-child(even)');
+// for(var i = 0 ; i < odd.length;i++){
+//     odd[i].style.backgroundColor = 'green'
+//     //even[i].style.backgroundColor = '#ccc'
+// }
+//parentNode
+// var itemlist = document.querySelector('#items')
+// itemlist.parentNode.style.backgroundColor = 'yellow';
+
+//parentElement
+
+// var itemlist = document.querySelector('#items')
+// itemlist.parentElement.style.backgroundColor = 'yellow';
+var newDiv = document.createElement('div');
+var newtextnode = document.createTextNode('HELLO WORLD');
+newDiv.appendChild(newtextnode)
+
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header h1');
+
+container.insertBefore(newDiv,h1);
