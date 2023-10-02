@@ -62,11 +62,11 @@ input.value = 'suletha'
 
 // var itemlist = document.querySelector('#items')
 // itemlist.parentElement.style.backgroundColor = 'yellow';
-var newDiv = document.createElement('div');
-var newtextnode = document.createTextNode('HELLO WORLD');
-newDiv.appendChild(newtextnode)
+// var newDiv = document.createElement('div');
+// var newtextnode = document.createTextNode('HELLO WORLD');
+// newDiv.appendChild(newtextnode)
 
-var container = document.querySelector('header .container');
-var h1 = document.querySelector('header h1');
+// var container = document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
 
-container.insertBefore(newDiv,h1);
+// container.insertBefore(newDiv,h1);
